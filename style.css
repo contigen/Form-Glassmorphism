@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #254855, #33cc99);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.square {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  filter: blur(1px);
+}
+.form {
+  width: 350px;
+  min-height: 400px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 5px 15px 24px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+}
+.form h1 {
+  color: #fff;
+}
+.form .input {
+  margin-top: 30px;
+  width: 100%;
+}
+.input input {
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 30px;
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+.input input[type="submit"] {
+  color: black;
+  cursor: pointer;
+}
+.input input::placeholder {
+  color: #fff;
+}
+.forget {
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.forget a {
+  color: black;
+  text-decoration: none;
+}
